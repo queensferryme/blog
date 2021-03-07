@@ -2,6 +2,7 @@
 title: Termux 安装配置：Android 上的 Linux 终端
 date: 2018-07-09 21:29:11
 tags:
+  - android
   - linux
 ---
 

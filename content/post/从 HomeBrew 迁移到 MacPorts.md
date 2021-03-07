@@ -1,6 +1,8 @@
 ---
 title: "从 HomeBrew 迁移到 MacPorts"
 date: 2021-02-24T17:38:38+08:00
+tags:
+  - macOS
 ---
 
 在听取了一些朋友的建议后，我决定使用 [MacPorts](https://www.macports.org/) 代替 [Homebrew](https://brew.sh/) 作为 macOS 上的包管理器。这篇博客记录了我迁移的原因、过程和结果。

@@ -3,6 +3,7 @@ title: "Naive Bayes Classifier 简洁教程"
 date: 2019-09-25T09:40:19+08:00
 draft: false
 tags:
+  - bayesian
   - machine learning
 ---
 

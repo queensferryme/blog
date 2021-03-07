@@ -2,7 +2,6 @@
 title: Docker 初探：部署 MySQL 与 Flask 服务
 date: 2018-10-30 08:38:23
 tags:
-  - devops
   - docker
 ---
 
