@@ -6,7 +6,7 @@ paginate = 5
 theme = "hugo-theme-texify"
 title = "Blog de Queensferry"
 
-disqusShortname = "blog-tr1jtubqlx"
+disqusShortname = ""
 googleAnalytics = "UA-148460768-1"
 pygmentsUseClasses = true
 
@@ -46,3 +46,10 @@ name = "Queensferry"
   footnote = "Follow me on <a class=link href=https://github.com/queensferryme>GitHub</a>, <a class=link href=https://twitter.com/queensferryme>Twitter</a> or <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
   keywords = ["hugo", "latex", "theme"]
 
+# see https://utteranc.es for installation guide
+[params.utterances]
+  enable = true
+  repo = "queensferryme/blog"
+  issue_term = "pathname"
+  label = "Comment"
+  theme = "github-light"
