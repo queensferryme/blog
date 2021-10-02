@@ -10,13 +10,16 @@ title: "About"
 
 🤖 Interested in Machine Learning, Deep Learning etc. Currently working on a bachelor's degree.
 
-💻 Also an underdeveloped web developer, with some experience in [Docker](https://www.docker.com/), [PostgreSQL](https://www.postgresql.org/), [FastAPI](https://github.com/tiangolo/fastapi), [Vue](https://github.com/vuejs/vue).
+💻 Also an underdeveloped web developer, with some experience in Docker, [Flask](https://github.com/pallets/flask)/[Gin](https://github.com/gin-gonic/gin), SQL, Vue.
 
-🔥 Mostly use Python, JavaScript and Rust. Want to learn Julia, Haskell and much more.
+🔥 Mostly use Python, Rust and TypeScript. Want to learn Clojure, Julia and much more.
 
 🌊 History / Philosophy / Politics are my hobbies other than Technologies.
 
 ## Projects
 
+- [Hackintosh-Dell-7580](https://github.com/queensferryme/Hackintosh-Dell-7580): Hackintosh EFI Configuration for Dell Inspiron 7580
+- [RSSerpent](https://github.com/RSSerpent/RSSerpent): 🐍 This snake helps you reconnect the Web, with RSS feeds!
+- [flake8-too-many](https://github.com/queensferryme/flake8-too-many): A flake8 plugin that prevents you from writing "too many" bad codes.
 - [hugo-theme-texify](https://github.com/queensferryme/hugo-theme-texify): A minimal, latex-style hugo theme for personal blogging.
-- [RSSHub](https://github.com/DIYgod/RSSHub): I am a contributor of RSSHub and I host my own RSSHub [instance](https://rsshub.qufy.me). Feel free to use!
+
