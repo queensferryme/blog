@@ -8,11 +8,9 @@ title: "About"
 
 >   **Cogito ergo sum.**
 
-🤖 Interested in Machine Learning, Deep Learning etc. Currently working on a bachelor's degree.
+🤖 Interested in Machine Learning, Web Developing and DevOps. Currently working on a bachelor's degree.
 
-💻 Also an underdeveloped web developer, with some experience in Docker, [Flask](https://github.com/pallets/flask)/[Gin](https://github.com/gin-gonic/gin), SQL, Vue.
-
-🔥 Mostly use Python, Rust and TypeScript. Want to learn Clojure, Julia and much more.
+💻 Mostly use Python and TypeScript. Want to learn Clojure, Julia, Rust and much more.
 
 🌊 History / Philosophy / Politics are my hobbies other than Technologies.
 
