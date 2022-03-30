@@ -16,6 +16,8 @@ name = "Queensferry"
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = true
     [markup.goldmark.renderer]
       unsafe = true
 
