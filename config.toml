@@ -1,57 +1,113 @@
-baseURL = "https://qufy.me"
-defaultContentLanguage = "en"
-hasCJKLanguage = true
-languageCode = "en"
-paginate = 5
-theme = "hugo-theme-texify"
-title = "Blog de Queensferry"
+###################################################
+# BUILT-IN CONFIGURATION OPTOINS                  #
+# https://gohugo.io/getting-started/configuration #
+###################################################
 
-disqusShortname = ""
-googleAnalytics = "UA-148460768-1"
-pygmentsUseClasses = true
+baseURL = "https://qufy.me"        # website root path
+disqusShortname = ""               # disqus shortcode
+enableGitInfo = true               # retrieve last modified date from git commits
+enableRobotsTXT = true             # /robots.txt
+googleAnalytics = "UA-148460768-1" # google analytics id
+hasCJKLanguage = true              # Chinese/Japanese/Korean
+languageCode = "zh-CN"             # content language
+paginate = 5                       # number of posts each page
+rssLimit = 10                      # maximum items in rss feeds
+theme = "hugo-theme-texify"        # theme directory name
+title = "Blog de Queensferry"      # website title
 
 [author]
-name = "Queensferry"
+email = "queensferry.me@gmail.com" # your email
+name = "Queensferry"               # your name
 
+# https://gohugo.io/getting-started/configuration-markup
 [markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      strikethrough = true
-    [markup.goldmark.renderer]
-      unsafe = true
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark.renderer]
+unsafe = true # enable html in markdown
+[markup.highlight]
+style = "emacs" # syntax highlight style, see https://xyproto.github.io/splash/docs/
 
+# https://gohugo.io/content-management/menus/
+[[menu.main]] # sections in the website header
+identifier = "post" # section id
+name = "Post"       # section display title
+url = "/"           # path to the section
+weight = 1          # order of sections
 [[menu.main]]
-  identifier = "post"
-  name = "Post"
-  url = "/"
-  weight = 1
+identifier = "archives"
+name = "Archives"
+url = "/post/"
+weight = 2
 [[menu.main]]
-  identifier = "archives"
-  name = "Archives"
-  url = "/post/"
-  weight = 2
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = 3
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
+
+# https://gohugo.io/content-management/taxonomies#configure-taxonomies
+[taxonomies]
+series = "series" # see https://gohugo.io/templates/internal/#open-graph
+tags = "tags"
+
+
+########################
+# TEXIFY THEME OPTIONS #
+########################
 
 [params]
-  customCSS = ["css/custom.css"]
-  dateFormat = "2006-01-02"
-  description = "an example site for hugo theme TeXify"
-  enableFullRSS = true
-  enableHanEmph = false
-  enableMathjax = true
-  favicon = "/favicon.ico"
-  footnote = "Follow me on <a class=link href=https://github.com/queensferryme>GitHub</a>, <a class=link href=https://twitter.com/queensferryme>Twitter</a> or <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
-  keywords = ["hugo", "latex", "theme"]
+description = "the personal blog website of queensferry" # website description
+favicon = "favicon.ico" # path to website icon, relative to ./static
+footnote = """
+<a class=link href=https://github.com/queensferryme>GitHub</a>,
+<a class=link href=https://twitter.com/queensferryme>Twitter</a> or
+<a class=link href=post/index.xml>RSS</a> |
+<a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
+""" # notes in the website footer
+keywords = ["blog", "programming"] # website keywords
 
-# see https://utteranc.es for installation guide
+customCSS = ["css/custom.css"] # path to custom css files, relative to ./static
+customJS = []                  # path to custom js files, relative to ./static
+dateFormat = "2006-01-02"      # date format, see https://gohugo.io/functions/format/
+fullTextRSS = true             # output full-text (instead of only summary) rss
+emphasisWithDots = false       # use dots to emphasize chinese texts, see https://zh.wikipedia.org/wiki/%E7%9D%80%E9%87%8D%E5%8F%B7
+since = "2019"                 # website created year
+toc = false                    # whether to enable table of contents in posts
+
+# https://giscus.app
+[params.giscus]
+enable = true # whether to enable giscus
+# paste giscus' <script></script> configuration between the triple quotes
+script = """
+<script src="https://giscus.app/client.js"
+    data-repo="queensferryme/blog"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxODk3NTkzMDQ="
+    data-category="General"
+    data-category-id="DIC_kwDOC09_SM4COXcg"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>
+"""
+
+[params.math]
+enable = true # whether to enable math typesetting
+use = "katex" # katex or mathjax
+
+[params.outdated]
+enable = false # whether to display warnings for outdated posts
+limit = 1000   # days between last modified time and outdated time
+# warning to be displayed
+warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
+
+# https://utteranc.es
 [params.utterances]
-  enable = true
-  repo = "queensferryme/blog"
-  issue_term = "pathname"
-  label = "Comment"
-  theme = "github-light"
+enable = false # whether to enable utterances
+# paste utterances' <script></script> configuration between the triple quotes
+script = """
+"""
