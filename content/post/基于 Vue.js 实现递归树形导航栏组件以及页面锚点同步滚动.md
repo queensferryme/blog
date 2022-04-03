@@ -2,7 +2,6 @@
 title: 基于 Vue.js 实现递归树形导航栏组件以及页面锚点同步滚动
 date: 2018-12-22 16:36:45
 tags:
-  - frontend
   - vue
 ---
 

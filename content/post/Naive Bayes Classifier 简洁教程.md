@@ -1,7 +1,6 @@
 ---
 title: "Naive Bayes Classifier 简洁教程"
 date: 2019-09-25T09:40:19+08:00
-draft: false
 tags:
   - bayesian
   - machine learning
@@ -13,7 +12,7 @@ Naive Bayes Classifier 其实相当“朴素”，抛开对“机器学习”这
 
 <!--more-->
 
-# 贝叶斯定理
+## 贝叶斯定理
 
 受过高中教育的人应该都知道贝叶斯定理，它是关于随机事件 A 和 B 的条件概率定理，其数学形式如下:
 $$
@@ -32,7 +31,7 @@ $$
 
 因为 $P(A|B)=\dfrac{P(A\cap B)}{P(B)},P(B|A)=\dfrac{P(A\cap B)}{P(A)}$，故有 $P(A|B)P(B)=P(B|A)P(A)$，其中 $P(A\cap B)$ 通常也记作 $P(AB)$ 或 $P(A,B)$。
 
-# 朴素贝叶斯分类器
+## 朴素贝叶斯分类器
 
 假设我们的已知数据集包括一系列特征向量（feature vector）以及与其对应的标记值（label value）。我们的期望是给定任一组新的特征值（feature value），我们能预测出标记空间（label space）中各标记值的取值概率 —— 并取概率最大的为我们的预测结果。
 
@@ -94,7 +93,7 @@ P(F\_i=f\_i|C=c)&=\dfrac{1}{\sqrt{2\pi}\sigma\_{c,i}}\operatorname{exp}\left(-\d
 \end{aligned}
 $$
 
-## Laplace 校准
+### Laplace 校准
 
 对于离散的特征值，如果我们的样本中存在某些缺失的项 —— 例如 $P(F_i=\text{rainy}|C=\text{picnic})=0$ —— 那么在进行 $\prod$ 连乘时会导致其他所有特征的贡献都被抹除了，这是比较严重的误差。尽管下雨天外出野餐的概率并不高，但可能存在其他因素使得人们即使下雨天也要外出野餐。为了避免这种状况，我们给所有从未出现的特征值进行样本修正（sample correction），为其赋予一个至少为 1 的伪计数（pseudocount）。当伪计数为 1 时，我们将这种技巧成为 Laplace smoothing；当伪计数为任意值时，称之为 Lidstone smoothing。
 

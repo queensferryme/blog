@@ -71,7 +71,7 @@ dateFormat = "2006-01-02"      # date format, see https://gohugo.io/functions/fo
 fullTextRSS = true             # output full-text (instead of only summary) rss
 emphasisWithDots = false       # use dots to emphasize chinese texts, see https://zh.wikipedia.org/wiki/%E7%9D%80%E9%87%8D%E5%8F%B7
 since = "2019"                 # website created year
-toc = false                    # whether to enable table of contents in posts
+toc = true                     # whether to enable table of contents in posts
 
 # https://giscus.app
 [params.giscus]

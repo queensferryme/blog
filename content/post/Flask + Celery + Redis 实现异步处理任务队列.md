@@ -2,7 +2,8 @@
 title: Flask + Celery + Redis 实现异步处理任务队列
 date: 2019-03-31 16:40:16
 tags:
-  - backend
+  - flask
+  - mq
   - python
 ---
 
