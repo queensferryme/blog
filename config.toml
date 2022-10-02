@@ -3,7 +3,7 @@
 # https://gohugo.io/getting-started/configuration #
 ###################################################
 
-baseURL = "https://qufy.me"        # website root path
+baseURL = "https://queensferry.me" # website root path
 disqusShortname = ""               # disqus shortcode
 enableGitInfo = true               # retrieve last modified date from git commits
 enableRobotsTXT = true             # /robots.txt
