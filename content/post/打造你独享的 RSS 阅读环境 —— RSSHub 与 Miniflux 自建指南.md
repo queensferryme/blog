@@ -39,7 +39,7 @@ tags:
 
 5. 如果你不喜欢 `xxx.vercel.app` 这样的域名，你也可以对域名进行自定义（前提是你已经拥有一个域名），详见[文档](https://vercel.com/docs/custom-domains)。
 
-最后，也欢迎你来使用我搭建的 RSSHub 实例 <https://rsshub.qufy.me>。
+~~最后，也欢迎你来使用我搭建的 RSSHub 实例 <https://rsshub.qufy.me>。~~ 此域名现已停止使用。
 
 ## Miniflux
 

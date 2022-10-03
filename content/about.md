@@ -4,7 +4,7 @@ title: "About"
 
 # 👋Hi, There
 
-[![](https://img.shields.io/badge/-Blog-ff4088?logo=Hugo&logoColor=white&style=flat-square)](http://qufy.me) [![](https://img.shields.io/badge/-Email-c2392a?logo=Gmail&logoColor=white&style=flat-square)](mailto://queensferry.me@gmail.com) [![](https://img.shields.io/badge/-GitHub-black?logo=GitHub&style=flat-square)](https://github.com/queensferryme) [![](https://img.shields.io/badge/-RSS-ffa500?logo=RSS&logoColor=fff&style=flat-square)](http://qufy.me/index.xml) [![](https://img.shields.io/badge/-Telegram-2ca5e0?labelColor=fafafa&logo=Telegram&logoWidth=13&style=flat-square)](https://t.me/queensferryme)  [![](https://img.shields.io/badge/-Twitter-1da1f2?logo=Twitter&logoColor=white&style=flat-square)](https://twitter.com/queensferryme)
+[![](https://img.shields.io/badge/-Blog-ff4088?logo=Hugo&logoColor=white&style=flat-square)](http://queensferry.me) [![](https://img.shields.io/badge/-Email-c2392a?logo=Gmail&logoColor=white&style=flat-square)](mailto://queensferry.me@gmail.com) [![](https://img.shields.io/badge/-GitHub-black?logo=GitHub&style=flat-square)](https://github.com/queensferryme) [![](https://img.shields.io/badge/-RSS-ffa500?logo=RSS&logoColor=fff&style=flat-square)](http://queensferry.me/index.xml) [![](https://img.shields.io/badge/-Telegram-2ca5e0?labelColor=fafafa&logo=Telegram&logoWidth=13&style=flat-square)](https://t.me/queensferryme)  [![](https://img.shields.io/badge/-Twitter-1da1f2?logo=Twitter&logoColor=white&style=flat-square)](https://twitter.com/queensferryme)
 
 >   **Cogito ergo sum.**
 
