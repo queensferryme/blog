@@ -1,12 +1,12 @@
 ---
 title: 故都•秋•遐想
 date: 2018-11-10 19:24:28
-images: ['https://i.loli.net/2019/09/27/KUHboYuIg2S6njQ.png']
+images: ['/post/autumn-in-peking/river-lantern.png']
 tags:
   - prose
 ---
 
-[![river-lantern](https://i.loli.net/2019/09/27/KUHboYuIg2S6njQ.png)](https://i.loli.net/2019/09/27/KUHboYuIg2S6njQ.png)
+[![River Lantern](river-lantern.png)](river-lantern.png)
 
 *「图片来源 https://www.pixiv.net/artworks/70259834」*
 

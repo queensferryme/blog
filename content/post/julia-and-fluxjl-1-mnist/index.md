@@ -1,5 +1,5 @@
 ---
-title: "Julia + Flux.jl：从 MNIST 开始"
+title: "Julia + Flux.jl（一）：从 MNIST 开始"
 date: 2021-04-30T18:23:49+08:00
 tags:
   - julia

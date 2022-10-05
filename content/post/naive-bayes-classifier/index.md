@@ -27,7 +27,7 @@ $$
 
 利用韦恩图能很直观地理解这一定义：
 
-[![bayes-theorem-venn-graph](https://i.loli.net/2019/09/25/Edf8IelUyDG9kmF.jpg)](https://i.loli.net/2019/09/25/Edf8IelUyDG9kmF.jpg)
+[![Bayes Theorem Venn Graph](venn.jpg)](venn.jpg)
 
 因为 $P(A|B)=\dfrac{P(A\cap B)}{P(B)},P(B|A)=\dfrac{P(A\cap B)}{P(A)}$，故有 $P(A|B)P(B)=P(B|A)P(A)$，其中 $P(A\cap B)$ 通常也记作 $P(AB)$ 或 $P(A,B)$。
 
@@ -54,7 +54,7 @@ $$
 &\propto{P(C)P(F_1,\dots,F_n|C)}\newline
 &\propto{P(C)P(F_1|C)P(F_2,\dots,F_n|C,F_1)}\newline
 &\propto{P(C)P(F_1|C)P(F_2|C,F_1)P(F_3,\dots,F_n|C,F_1,F_2)}\newline
-&\propto{P(C)P(F_1|C)P(F_2|C,F_1)\dots{P(F_n|C,F_1,F\_2,\dots,F\_{n-1})}}
+&\propto{P(C)P(F_1|C)P(F_2|C,F_1)\dots{P(F_n|C,F_1,F_2,\dots,F_{n-1})}}
 \end{aligned}
 $$
 
@@ -63,8 +63,8 @@ $$
 $$
 \begin{aligned}
 &P(C|F_1,\dots,F_n)\newline
-&\propto{P(C)P(F_1|C)P(F_2|C)\dots{P(F\_n|C)}}\newline
-&\propto{P(C)\prod\_{i=1}^n{P(F_i|C)}}
+&\propto{P(C)P(F_1|C)P(F_2|C)\dots{P(F_n|C)}}\newline
+&\propto{P(C)\prod_{i=1}^n{P(F_i|C)}}
 \end{aligned}
 $$
 
@@ -87,9 +87,9 @@ $$
 对于连续的特征值（例如身高 0cm~300cm），我们通常假设其服从正态分布（Normal Distribution，又称高斯分布，Gaussian Distribution），从而可得如下公式：
 $$
 \begin{aligned}
-P(F\_i=f\_i|C=c)&=\dfrac{1}{\sqrt{2\pi}\sigma\_{c,i}}\operatorname{exp}\left(-\dfrac{(x\_i-\mu\_{c,i})^2}{2\sigma\_{c,i}^2}\right)\newline
-\mu\_{c,i}&=\operatorname{Average}(F\_i|C=c)\newline
-\sigma\_{c,i}&=\operatorname{Variance}(F\_i|C=c)
+P(F_i=f_i|C=c)&=\dfrac{1}{\sqrt{2\pi}\sigma_{c,i}}\operatorname{exp}\left(-\dfrac{(x_i-\mu_{c,i})^2}{2\sigma_{c,i}^2}\right)\newline
+\mu_{c,i}&=\operatorname{Average}(F_i|C=c)\newline
+\sigma_{c,i}&=\operatorname{Variance}(F_i|C=c)
 \end{aligned}
 $$
 

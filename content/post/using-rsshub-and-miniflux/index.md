@@ -29,11 +29,11 @@ tags:
 
 3. 绑定好账户后，在个人主页点击「[New Project](https://vercel.com/new)」新建项目，在这里找到你的 RSSHub 复刻，并点击「Import」按钮导入。
 
-   [![vercel-import-rsshub.png](https://i.loli.net/2021/03/06/ClUEgSZ9Xn1xaVL.png)](https://i.loli.net/2021/03/06/ClUEgSZ9Xn1xaVL.png)
+   [![Import RSSHub on Vercel](rsshub-import.png)](rsshub-import.png)
 
 4. 接下来都按照默认配置不需要改动，一直点击下去就可以了。当然你可以把项目名称修改成你喜欢的样子；如果还需要配置 YouTube 之类需要环境变量的路由，你也可以修改相关环境变量（Environment Variables），详见[文档](https://docs.rsshub.app/install/#pei-zhi)。配置好后最后一步点击部署（Deploy），等待一小段时间，成功后就可以见到类似下图的画面：
 
-   [![RGgSqcBs8j64Fpi](https://i.loli.net/2021/03/06/RGgSqcBs8j64Fpi.png)](https://i.loli.net/2021/03/06/RGgSqcBs8j64Fpi.png)
+   [![Successfully Deploy RSSHub on Vercel](rsshub-deploy-success.png)](rsshub-deploy-success.png)
 
    点击访问（Visit），你的浏览器就会跳转到你自建的 RSSHub 实例的地址啦～
 
@@ -49,7 +49,7 @@ tags:
 
 第一步，登录你的 VPS。我们将会使用 Docker 和 Docker-Compose 来部署 Miniflux。Docker 官网提供了在 Ubuntu 上安装 Docker 的详尽[教程](https://docs.docker.com/engine/install/ubuntu/)（其他常见 Linux 发行版的教程也有），可供参考；如果你使用的是国内的 VPS，觉得从 Docker 官网下载太慢的话，也可以使用清华大学的 tuna 开源软件[镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)。然后再安装 `docker-compose`，Docker 官网同样有[教程](https://docs.docker.com/compose/install/)；如果你使用 Ubuntu 操作系统，也可以通过 `sudo apt install docker-compose` 来安装。安装完成后通过 `docker version` 和 `docker-compose version` 这两条命令来验证是否安装成功，若安装成功输出应如下图：
 
-[![gWqACYuPLGma1IO](https://i.loli.net/2021/03/06/gWqACYuPLGma1IO.png)](https://i.loli.net/2021/03/06/gWqACYuPLGma1IO.png)
+[![Install Docker on VPS](miniflux-install-docker.png)](miniflux-install-docker.png)
 
 第二步，编写 `docker-compose.yaml` 配置文件来部署 Miniflux。在你觉得合适的位置创建文件夹 `mkdir ~/miniflux`，进入文件夹 `cd ~/miniflux` 并创建配置文件 `touch docker-compose.yaml`。使用你喜欢的文本编辑器（例如 vim/nano）打开配置文件 `nano docker-compose.yaml`，将以下内容复制进去：
 
@@ -92,7 +92,7 @@ volumes:
 
 第三步，当你配置好后，使用 `docker-compose up -d` 命令即可部署 Miniflux，部署成功输出应如下图。你也可以使用 `docker ps -a` 命令来查看容器状态，如果 Miniflux 和数据库（db）的状态（status）都是 `Up xxx seconds`，那就说明你的部署成功了。部署过程需要从 Docker Hub 拉取容器镜像，如果你使用国内 VPS 并感到下载速度过慢，可以考虑使用阿里云的[容器镜像加速服务](https://help.aliyun.com/document_detail/60750.html)。
 
-[![gFGT7sJdSHaDRZh](https://i.loli.net/2021/03/06/gFGT7sJdSHaDRZh.png)](https://i.loli.net/2021/03/06/gFGT7sJdSHaDRZh.png)
+[![Deploy Miniflux with Docker](miniflux-deploy.png)](miniflux-deploy.png)
 
 最后一步，使用 Caddy 为你的 Miniflux 配置域名和 HTTPs。首先你需要到你的 DNS 服务商那里为你希望使用的域名新增一条 A 型记录，指向你部署有 Miniflux 的 VPS 的公网 IPv4 地址；如果你的 VPS 支持 IPv6 的话，你也可以再配置一条 AAAA 型记录，指向其 IPv6 地址。由于 DNS 配置生效需要一定时间（有时甚至长达数小时），这件事其实可以早点去做。
 
@@ -106,7 +106,7 @@ reverse_proxy localhost:8080
 
 将第一行修改成你自己的域名即可。修改好配置，使用命令 `sudo systemctl restart caddy.service` 重启 Caddy，此时 Caddy 应该读取到了你修改的配置，并开始帮你自动申请 HTTPs 证书了。稍等一小段时间，在你的浏览器里通过域名访问 Miniflux，如果成功进入登录页面（如下图），那么恭喜你：你部署成功了！
 
-[![l6Q7rCsaGzo2U8B](https://i.loli.net/2021/03/06/l6Q7rCsaGzo2U8B.png)](https://i.loli.net/2021/03/06/l6Q7rCsaGzo2U8B.png)
+[![Successfully Deploy Miniflux](miniflux-deploy-success.png)](miniflux-deploy-success.png)
 
 需要注意的是，现代 VPS 通常都默认开启了防火墙，而防火墙的 80、443 端口若没有开启就会导致 Caddy 申请证书失败。如果你在最后一步失败了，请检查一下你的 VPS 是否有防火墙。
 

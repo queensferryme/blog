@@ -1,5 +1,5 @@
 ---
-title: "Julia + Flux.jl：GraphSAGE 与图神经网络"
+title: "Julia + Flux.jl（三）：GraphSAGE 与图神经网络"
 date: 2022-04-23T16:19:15+08:00
 tags:
   - julia

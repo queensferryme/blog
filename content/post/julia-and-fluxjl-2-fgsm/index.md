@@ -1,5 +1,5 @@
 ---
-title: "Julia + Flux.jl：向神经网络发起进攻！"
+title: "Julia + Flux.jl（二）：向神经网络发起进攻！"
 date: 2021-05-10T17:08:10+08:00
 tags:
   - julia
@@ -149,7 +149,7 @@ end
 plot(plots..., layout=(7, 5), size=(800, 1050), fmt=:png)
 ```
 
-[![fgsm-mnist](https://i.loli.net/2021/05/11/d2ogMEDGhqpCmNa.png)](https://i.loli.net/2021/05/11/d2ogMEDGhqpCmNa.png)
+[![FGSM Attack Visualization](visualization.png)](visualization.png)
 
 午饭时间到了，今天的博客就水到这里，拜拜👋
 
